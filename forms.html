@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Tutorial</title>
+</head>
+
+<body>
+    <p>
+    <h1>Forms Demo</h1>
+    </p>
+
+    <form action="/tacos">
+        <!-- below, if the type is button, it will not submit the form bcz its not labelled as submit-->
+        <p><button type="button">Do not Submit the Form</button>
+        </p>
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input type="username" placeholder="enter username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input type="password" placeholder="enter password" id="password" name="password">
+        </p>
+        <p>
+            <label for="color">Enter a color:</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a Number:</label>
+            <input type="number" placeholder="enter number" id="number" name="number">
+        </p>
+        <!-- below the type is submit which will submit the form.. -->
+        <button>Submit</button>
+        <!-- alternative methos for submit -->
+        <input type="submit" value="Click Me!">
+
+    </form>
+
+    <hr>
+
+    <!-- out side button , no default beharviour..doesnt submit-->
+    <button>outside button</button>
+
+
+    <!-- some example for real search engine -->
+    <h2><u>Hijacking Search Engines</u></h2>
+    <h3>Reddit Search</h3>
+
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Google Search</h3>
+    <form action="https://www.google.com/search?q=cow">
+        <input type="text" name="q" id="">
+        <button>Search Google</button>
+    </form>
+    <h3>Youtube Search</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="q">
+        <button>Search Yooutube
+        </button>
+    </form>
+    <!-- check boxes -->
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agreement">
+        <label for="agreement">I agree to terms and conditions</label>
+        <p>
+            <!-- Radiobutton -->
+        <h3>Choose your size:</h3>
+        <label for="xs">XS</label>
+        <input type="radio" name="erick" id="xs" value="xs">
+        <label for="m">M</label>
+        <input type="radio" name="erick" id="m" value="m">
+        <label for="s">S</label>
+        <input type="radio" name="erick" id="s" value="s">
+        </p>
+        <p>
+            <!-- select  -->
+            <label for="meal">please select your mal</label>
+            <select name="meal" id="meal">
+                <option value="fish">fish</option>
+                <option value="veg">veg</option>
+                <option value="steak" selected>steak</option>
+            </select>
+        </p>
+        <p>
+            <!-- range -->
+            <input type="range" id="cheese" step="10" max="100" value="25" name="cheese_label">
+            <label for="cheese">Amount for label of Cheese</label>
+
+        </p>
+        <p>
+        <p>
+            <!-- text area -->
+            <label for="requests">Any Special Request? </label>
+            <textarea name="requests" id="requests" rows="10" cols="40"> </textarea>
+        </p>
+        <button>
+            Submit
+        </button>
+        </p>
+    </form>
+    <!-- Validation -->
+
+    <h2>Validation</h2>
+
+    <form action="/santosh">
+
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" placeholder="First Name" required>
+        <p>
+            <label for="lastname">Enter Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="last Name" required>
+        </p>
+        <p><label for="usernames">Username</label>
+            <input type="text" name="usernames" id="usernames" minlength="5" maxlength="15" required
+                placeholder="Username">
+        <p>
+            <label for="email">Enter Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+        </p>
+        <p>
+            <label for="password1">Enter Password</label>
+            <input type="password" name="password1" id="password1" placeholder="Password" required>
+        </p>
+
+        <p>
+            <button>submit</button>
+        </p>
+    </form>
+
+
+</body>
+
+</html>

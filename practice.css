@@ -1,0 +1,22 @@
+h1 {
+    color: white;
+    background-color: mediumaquamarine;
+}
+
+h2 {
+    color: magenta;
+    background: darkgrey;
+}
+
+p {
+    color: firebrick;
+}
+
+button {
+    color: teal;
+    background-color: rgb(230, 200, 200);
+}
+
+body {
+    background-color: khaki;
+}
